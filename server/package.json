@@ -38,6 +38,6 @@
     "prisma": "^7.9.1",
     "ts-node": "^10.9.2",
     "tsx": "^4.23.3",
-    "typescript": "^7.0.2"
+    "typescript": "^5.9.2"
   }
 }
