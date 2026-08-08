@@ -3,10 +3,7 @@
   "functions": {
     "server.ts": {
       "runtime": "@vercel/node",
-      "includeFiles": [
-        "generated/**",
-        "prisma/**"
-      ]
+      "includeFiles": "generated/**"
     }
   },
   "rewrites": [
