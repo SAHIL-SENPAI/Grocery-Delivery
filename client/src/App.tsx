@@ -27,7 +27,7 @@ const App = () => {
   return(
     <>
     <Toaster position='top-right' toastOptions={{duration:3000,style:{background:"#1B3022"
-      , color:"fff" , borderRadius: '12px' , fontSize:"14px"}}}/>
+      , color:"white" , borderRadius: '12px' , fontSize:"14px"}}}/>
 
     <Routes>
       {/* no Navbar and Footer */}

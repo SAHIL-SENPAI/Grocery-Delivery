@@ -7,11 +7,12 @@ const orderRouter = express.Router();
 
 orderRouter.post('/',auth,createOrder);
 orderRouter.get('/',auth,getUserOrders);
+orderRouter.get('/all',auth,admin,getAllOrders);
 orderRouter.get('/:id',auth,getOrder);
 orderRouter.get('/:id/location',auth,getOrderLocation);
 
 // admin routes
-orderRouter.get('/all',auth,admin,getAllOrders);
-orderRouter.put('/:id',auth,admin,updateOrderStatus);
+
+orderRouter.put('/:id/status',auth,admin,updateOrderStatus);
 
 export default orderRouter;

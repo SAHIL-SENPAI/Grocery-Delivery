@@ -1,6 +1,7 @@
 import {Request,Response} from 'express'
 import { prisma } from '../config/prisma.js';
 import { inngest } from '../inngest/index.js';
+import Stripe from 'stripe'
 
 // Create order
 // POST /api/order
@@ -61,6 +62,29 @@ export const createOrder = async(req:Request,res:Response)=>{
 
     if(paymentMethod === 'card'){
         //stripe payment link
+        const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string)
+
+        // create session
+        const session = await stripe.checkout.sessions.create({
+        success_url: `${req.headers.origin}/orders?clearCart=true`,
+        cancel_url: `${req.headers.origin}/checkout`,
+        line_items: [
+            {
+            price_data: {
+                currency:"usd",
+                product_data:{
+                    name:"Payment Groceries"
+                },
+                unit_amount: Math.round(total * 100)
+            },
+            quantity: 2,
+            },
+        ],
+        mode: 'payment',
+        metadata:{orderId:order.id}
+        });
+        return res.json({url:session.url});
+        // then well check if payment is successful or not using webhooks
     }
 
     //cash on delivery
@@ -88,8 +112,8 @@ export const getUserOrders = async(req:Request,res:Response)=>{
     const {status} = req.query;
 
     const where:any = {
-        userId:req.user!.id,
-        NOT:[{paymentMethod:"card",isPaid:false}]
+        userId: req.user!.id,
+        // NOT: [{paymentMethod:"card",isPaid:false}]
     }
 
     if(status && status !== "all"){
@@ -146,12 +170,13 @@ export const updateOrderStatus = async(req:Request,res:Response)=>{
 // Get all orders admin
 // GET /api/orders/all  
 export const getAllOrders = async(req:Request,res:Response)=>{
-    
-    const orders = await prisma.order.findMany({
-        where:{NOT:[{paymentMethod:"card",isPaid:false}]},
+
+    console.log("Hit") 
+    const orders = await prisma.order.findMany({ 
         include:{
             user:{select:{name:true,email:true}},
-            deliveryPartner:{select:{name:true,phone:true,email:true}}},
+            deliveryPartner:{select:{name:true,phone:true,email:true}}
+        },
         orderBy:{createdAt:"desc"}
     })
 

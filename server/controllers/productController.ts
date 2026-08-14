@@ -48,6 +48,7 @@ export const getProducts = async(req:Request,res:Response)=>{
 
 // GET /api/products/:id
 export const getProduct = async(req:Request,res:Response)=>{
+    console.log("GET PRODUCT API HIT")
     const product = await prisma.product.findUnique({
         where:{
             id:req.params.id as string
@@ -60,7 +61,6 @@ export const getProduct = async(req:Request,res:Response)=>{
     }
 
     const discount = product.originalPrice && product.price ? Math.round(((product.originalPrice-product.price)/product.originalPrice)*100) : 0;
-        return {...product,discount} 
 
     res.json({product:{...product,discount}});
 }
@@ -74,6 +74,7 @@ export const createProduct = async(req:Request,res:Response)=>{
 
 // PUT /api/products/:id
 export const updateProduct = async(req:Request,res:Response)=>{
+    console.log("UPDATE PRODUCT API HIT")
     // for uploading image and all well use diff controller
     const product = await prisma.product.update({where:{id:req.params.id as string},data:req.body});
     res.json({product}); 
@@ -82,8 +83,11 @@ export const updateProduct = async(req:Request,res:Response)=>{
 // DELETE /api/products/:id
 export const deleteProduct = async(req:Request,res:Response)=>{
     // for uploading image and all well use diff controller
-    await prisma.product.delete({where:{id:req.params.id as string}});
-    res.json({message:"Deleted"}); 
+    await prisma.product.update({
+        where:{id:req.params.id as string},
+        data:{stock:Number(0)}
+    });
+    res.json({message:"updated"}); 
 }
 
 

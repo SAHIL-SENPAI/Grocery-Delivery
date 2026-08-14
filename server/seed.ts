@@ -23,7 +23,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b3b",
             },
             {
-                _id: "69c22613ae75a98c7cd13b37",
+                id: "69c22613ae75a98c7cd13b37",
                 name: "Organic Quinoa 500g",
                 description: "High protein, Gluten-free",
                 price: 420,
@@ -42,7 +42,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b37",
             },
             {
-                _id: "69c22613ae75a98c7cd13b3a",
+                id: "69c22613ae75a98c7cd13b3a",
                 name: "Brown Bread 400g",
                 description: "Soft and healthy, Ideal for breakfast",
                 price: 35,
@@ -61,7 +61,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b3a",
             },
             {
-                _id: "69c22613ae75a98c7cd13b36",
+                id: "69c22613ae75a98c7cd13b36",
                 name: "Barley 1kg",
                 description: "Rich in fiber, Helps digestion",
                 price: 140,
@@ -80,7 +80,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b36",
             },
             {
-                _id: "69c22613ae75a98c7cd13b39",
+                id: "69c22613ae75a98c7cd13b39",
                 name: "Knorr Cup Soup 70g",
                 description: "Convenient and tasty",
                 price: 30,
@@ -99,7 +99,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b39",
             },
             {
-                _id: "69c22613ae75a98c7cd13b38",
+                id: "69c22613ae75a98c7cd13b38",
                 name: "Maggi Noodles 280g",
                 description: "Instant and easy to cook",
                 price: 50,
@@ -118,7 +118,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b38",
             },
             {
-                _id: "69c22613ae75a98c7cd13b30",
+                id: "69c22613ae75a98c7cd13b30",
                 name: "Sprite 1.5L",
                 description: "Chilled and refreshing, Perfect for celebrations",
                 price: 60,
@@ -137,7 +137,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b30",
             },
             {
-                _id: "69c22613ae75a98c7cd13b23",
+                id: "69c22613ae75a98c7cd13b23",
                 name: "Carrot 500g",
                 description: "Sweet and crunchy, Good for eyesight, Ideal for juices and salads",
                 price: 44,
@@ -156,7 +156,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b23",
             },
             {
-                _id: "69c22613ae75a98c7cd13b2f",
+                id: "69c22613ae75a98c7cd13b2f",
                 name: "Coca-Cola 1.5L",
                 description: "Perfect for parties and gatherings, Best served chilled",
                 price: 75,
@@ -175,7 +175,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b2f",
             },
             {
-                _id: "69c22613ae75a98c7cd13b35",
+                id: "69c22613ae75a98c7cd13b35",
                 name: "Brown Rice 1kg",
                 description: "Whole grain and nutritious",
                 price: 110,
@@ -194,7 +194,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b35",
             },
             {
-                _id: "69c22613ae75a98c7cd13b2d",
+                id: "69c22613ae75a98c7cd13b2d",
                 name: "Eggs 12 pcs",
                 description: "Farm fresh, Rich in protein, Ideal for breakfast and baking",
                 price: 85,
@@ -213,7 +213,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b2d",
             },
             {
-                _id: "69c22613ae75a98c7cd13b28",
+                id: "69c22613ae75a98c7cd13b28",
                 name: "Banana 1 kg",
                 description: "Sweet and ripe, High in potassium, Great for smoothies and snacking",
                 price: 45,
@@ -232,7 +232,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b28",
             },
             {
-                _id: "69c22613ae75a98c7cd13b33",
+                id: "69c22613ae75a98c7cd13b33",
                 name: "Basmati Rice 5kg",
                 description: "Long grain and aromatic, Perfect for biryani",
                 price: 520,
@@ -251,7 +251,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b33",
             },
             {
-                _id: "69c22613ae75a98c7cd13b25",
+                id: "69c22613ae75a98c7cd13b25",
                 name: "Onion 500g",
                 description: "Fresh and pungent, Perfect for cooking, A kitchen staple",
                 price: 45,
@@ -270,7 +270,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b25",
             },
             {
-                _id: "69c22613ae75a98c7cd13b31",
+                id: "69c22613ae75a98c7cd13b31",
                 name: "7 Up 1.5L",
                 description: "Refreshing lemon-lime flavor",
                 price: 70,
@@ -289,7 +289,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b31",
             },
             {
-                _id: "69c22613ae75a98c7cd13b24",
+                id: "69c22613ae75a98c7cd13b24",
                 name: "Spinach 500g",
                 description: "Rich in iron, High in vitamins, Perfect for soups and salads",
                 price: 15,
@@ -308,7 +308,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b24",
             },
             {
-                _id: "69c22613ae75a98c7cd13b27",
+                id: "69c22613ae75a98c7cd13b27",
                 name: "Orange 1 kg",
                 description: "Juicy and sweet, Rich in Vitamin C, Perfect for juices and salads",
                 price: 75,
@@ -327,7 +327,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b27",
             },
             {
-                _id: "69c22613ae75a98c7cd13b34",
+                id: "69c22613ae75a98c7cd13b34",
                 name: "Wheat Flour 5kg",
                 description: "Soft and fluffy rotis, Rich in nutrients",
                 price: 230,
@@ -346,7 +346,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b34",
             },
             {
-                _id: "69c22613ae75a98c7cd13b2a",
+                id: "69c22613ae75a98c7cd13b2a",
                 name: "Grapes 500g",
                 description: "Fresh and juicy, Rich in antioxidants, Perfect for snacking and fruit salads",
                 price: 65,
@@ -365,7 +365,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b2a",
             },
             {
-                _id: "69c22613ae75a98c7cd13b32",
+                id: "69c22613ae75a98c7cd13b32",
                 name: "Fanta 1.5L",
                 description: "Sweet and fizzy",
                 price: 65,
@@ -384,7 +384,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b32",
             },
             {
-                _id: "69c22613ae75a98c7cd13b2c",
+                id: "69c22613ae75a98c7cd13b2c",
                 name: "Paneer 200g",
                 description: "Soft and fresh, Rich in protein, Ideal for curries and snacks",
                 price: 85,
@@ -403,7 +403,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b2c",
             },
             {
-                _id: "69c22613ae75a98c7cd13b29",
+                id: "69c22613ae75a98c7cd13b29",
                 name: "Mango 1 kg",
                 description: "Sweet and flavorful, Perfect for smoothies and desserts, Rich in Vitamin A",
                 price: 140,
@@ -422,7 +422,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b29",
             },
             {
-                _id: "69c22613ae75a98c7cd13b22",
+                id: "69c22613ae75a98c7cd13b22",
                 name: "Tomato 1 kg",
                 description: "Juicy and ripe, Rich in Vitamin C, Perfect for salads and sauces, Farm fresh quality",
                 price: 28,
@@ -441,7 +441,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b22",
             },
             {
-                _id: "69c22613ae75a98c7cd13b21",
+                id: "69c22613ae75a98c7cd13b21",
                 name: "Potato 500g",
                 description: "Fresh and organic, Rich in carbohydrates, Ideal for curries and fries",
                 price: 35,
@@ -460,7 +460,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b21",
             },
             {
-                _id: "69c22613ae75a98c7cd13b2e",
+                id: "69c22613ae75a98c7cd13b2e",
                 name: "Cheese 200g",
                 description: "Creamy and delicious, Perfect for pizzas and sandwiches, Rich in calcium",
                 price: 130,
@@ -479,7 +479,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b2e",
             },
             {
-                _id: "69c22613ae75a98c7cd13b2b",
+                id: "69c22613ae75a98c7cd13b2b",
                 name: "Amul Milk 1L",
                 description: "Fresh milk, Rich in calcium",
                 price: 55,
@@ -498,7 +498,7 @@ const seedDB = async ()=>{
                 id: "69c22613ae75a98c7cd13b2b",
             },
             {
-                _id: "69c22613ae75a98c7cd13b26",
+                id: "69c22613ae75a98c7cd13b26",
                 name: "Apple 1 kg",
                 description: "Boosts immunity, Rich in fiber",
                 price: 90,

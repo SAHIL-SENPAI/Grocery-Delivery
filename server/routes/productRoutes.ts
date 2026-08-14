@@ -11,7 +11,7 @@ productRouter.get("/:id",getProduct)
 
 //admin
 productRouter.post("/",auth,admin,createProduct)
-productRouter.post("/:id",auth,admin,updateProduct)
+productRouter.put("/:id",auth,admin,updateProduct)
 productRouter.delete("/:id",auth,admin,deleteProduct)
 
 export default productRouter;
