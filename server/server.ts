@@ -17,6 +17,7 @@ import deliveryPartnerRouter from "./routes/deliveryPartnerRoutes.js";
 import stripeWebhook from "./controllers/webHooks.js";
 
 
+
 const app = express();
 
 app.post('/api/stripe', express.raw({type:"application/json"}),stripeWebhook)
