@@ -32,7 +32,7 @@ export default function AdminDeliveryPartners() {
         e.preventDefault();
         setSaving(true);
         try {
-            const {data} = await api.post("/admin/delivery-partners",form);
+            await api.post("/admin/delivery-partners",form);
             toast.success("Partner onBoarded successfully");
             setShowForm(false);
             setForm({name:"",email:"",password:"",phone:"",vehicleType:"bike"});
