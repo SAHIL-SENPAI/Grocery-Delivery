@@ -1,5 +1,5 @@
 import express from "express";
-import stripeWebhook from "../controllers/webHooks.js";
+import stripeWebhook from "../controllers/webhooks.js";
 
 const StripeRouter = express.Router();
 
